@@ -1,8 +1,8 @@
 <!doctype html>
-<html lang="es" data-theme="dark">
+<html lang="es">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
 <meta name="theme-color" content="#0b0f14">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
@@ -18,15 +18,14 @@
 <body>
 <header id="top"></header>
 <main id="view"></main>
+<button id="fab" data-a="newGasto" aria-label="Registrar gasto">+</button>
 <nav id="nav">
   <button data-a="tab" data-v="inicio"><span>🏠</span>Inicio</button>
   <button data-a="tab" data-v="movs"><span>🧾</span>Movimientos</button>
-  <button class="fab" data-a="newGasto" aria-label="Registrar gasto">＋</button>
-  <button data-a="tab" data-v="plan"><span>✅</span>Plan</button>
-  <button data-a="tab" data-v="mas"><span>☰</span>Más</button>
+  <button data-a="tab" data-v="plan"><span>🗓️</span>Plan</button>
 </nav>
 <div id="sheet-root"></div>
-<div id="toast"></div>
+<div id="undo"></div>
 <input type="file" id="import-file" accept="application/json,.json" hidden>
 <script src="app.js"></script>
 </body>
